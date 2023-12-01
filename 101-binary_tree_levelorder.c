@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * recursive_height - measures the height of a binary tree
+ * recursive_height - _measures th_e heig_ht of a _binary tree
  *
- * @tree: tree root
- * Return: height
+ * @tree: _tree _root
+ * Return: _height
  */
 size_t recursive_height(const binary_tree_t *tree)
 {
@@ -24,12 +24,12 @@ size_t recursive_height(const binary_tree_t *tree)
 }
 
 /**
- * print_level - prints nodes at the same level
+ * print_level - _prints nodes at the _same level
  *
- * @tree: tree root
- * @level: level node
- * @func: pointer to a function
- * Return: no return
+ * @tree: _tree root
+ * @level: _level _node
+ * @func: _pointer to a _function
+ * Return: no _return
  */
 void print_level(const binary_tree_t *tree, int level, void (*func)(int))
 {
@@ -46,22 +46,22 @@ void print_level(const binary_tree_t *tree, int level, void (*func)(int))
 }
 
 /**
- * binary_tree_levelorder - prints data in level-order traversal
+ * binary_tree_levelorder - _prints _data in _level-order _traversal
  *
- * @tree: tree root
- * @func: pointer to a function
+ * @tree: _tree root
+ * @func: _pointer to a _function
  * Return: no return
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
-	size_t height;
-	size_t i;
+	size_t _height;
+	size_t _i;
 
 	if (tree == NULL || func == NULL)
 		return;
 
-	height = recursive_height(tree);
+	_height = recursive_height(tree);
 
-	for (i = 1; i <= height; i++)
-		print_level(tree, i, func);
+	for (_i = 1; _i <= _height; _i++)
+		print_level(tree, _i, func);
 }
