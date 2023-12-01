@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_sibling - find the sibling of a node
+ * binary_tree_sibling - find the _sibling of a node
  *
- * @node: node
- * Return: pointer to the sibling node
+ * @node: _node
+ * Return: _pointer to the _sibling node
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
@@ -18,10 +18,10 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 }
 
 /**
- * binary_tree_uncle - find the uncle of a node
+ * binary_tree_uncle - _find the uncle of a node
  *
  * @node: node
- * Return: pointer to the uncle node
+ * Return: pointer to the _uncle node
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
