@@ -1,12 +1,6 @@
 #include "binary_trees.h"
 
-/**
- * check_balance_avl - checks the balance of each node
- *
- * @node: pointer to the node
- * @value: input value
- * Return: no return
- */
+
 void check_balance_avl(avl_t **node, int value)
 {
 	int balance;
@@ -40,13 +34,7 @@ void check_balance_avl(avl_t **node, int value)
 	}
 }
 
-/**
- * inorder_sucessor - determines the next/previous node of the removed node
- *
- * @tree: pointer to the node
- * @mode: 1 for inorder sucessor, 2 for inorder precessor
- * Return: pointer to the next/previous node
- */
+
 avl_t *inorder_sucessor(avl_t *tree, int mode)
 {
 	avl_t *node;
@@ -83,13 +71,7 @@ avl_t *inorder_sucessor(avl_t *tree, int mode)
 	return (node);
 }
 
-/**
- * change_node - changes the removed node by the next/previous node
- *
- * @arg_tree: pointer to the removed node
- * @arg_node: poitner to the next/previous node
- * Return: no return
- */
+
 void change_node(avl_t **arg_tree, avl_t **arg_node)
 {
 	avl_t *put_node, *tree;
@@ -135,13 +117,7 @@ void change_node(avl_t **arg_tree, avl_t **arg_node)
 }
 
 
-/**
- * avl_search_remove - searches to remove a node in an AVL tree
- *
- * @tree: tree root
- * @value: node value
- * Return: pointer the removed node
- */
+
 avl_t *avl_search_remove(avl_t **tree, int value)
 {
 	avl_t *put_node;
@@ -187,13 +163,7 @@ avl_t *avl_search_remove(avl_t **tree, int value)
 }
 
 
-/**
- * avl_remove - removes a node in an AVL tree
- *
- * @root: tree root
- * @value: node value
- * Return: pointer to the new root
- */
+
 avl_t *avl_remove(avl_t *root, int value)
 {
 	if (root == NULL)
