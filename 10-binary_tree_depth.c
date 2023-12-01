@@ -15,11 +15,11 @@ size_t recursive_depth(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_depth - calls recursive_depth to return the depth
- * of a node in a binary tree
+ * binary_tree_depth - _calls _ecursive_depth to return the depth
+ * of a _node in a _binary tree
  *
- * @tree: tree root
- * Return: depth of the tree or 0 if tree is NULL;
+ * @tree: _tree _root
+ * Return: _depth of _the tree or 0 if _tree is NULL;
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
