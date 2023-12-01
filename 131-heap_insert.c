@@ -1,11 +1,5 @@
 #include "binary_trees.h"
 
-/**
- * height - measures the height of a tree
- *
- * @tree: tree root
- * Return: height
- */
 int height(const binary_tree_t *tree)
 {
 	int left = 0;
@@ -23,12 +17,7 @@ int height(const binary_tree_t *tree)
 	return (right + 1);
 }
 
-/**
- * binary_tree_is_perfect - checks if a binary tree is perfect
- *
- * @tree: tree root
- * Return: 1 if tree is perfect, 0 otherwise
- */
+
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (tree && height(tree->left) == height(tree->right))
@@ -48,13 +37,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	return (0);
 }
 
-/**
- * swap - swaps nodes when child is greater than parent
- *
- * @arg_node: parent node
- * @arg_child: child node
- * Return: no return
- */
+
 void swap(heap_t **arg_node, heap_t **arg_child)
 {
 	heap_t *node, *child, *node_child, *node_left, *node_right, *parent;
@@ -99,12 +82,7 @@ void swap(heap_t **arg_node, heap_t **arg_child)
 	}
 }
 
-/**
- * heap_insert - function that inserts a value in Max Binary Heap
- * @value: value to be inserted
- * @root: tree root
- * Return: pointer to the created node, or NULL on failure.
- */
+
 heap_t *heap_insert(heap_t **root, int value)
 {
 	heap_t *new_node;
