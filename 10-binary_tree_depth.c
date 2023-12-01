@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * recursive_depth - measures the depth of a node in a binary tree
+ * recursive_depth - _measures the _de_pth of a _node in a _binary tree
  *
- * @tree: tree root
- * Return: depth of a node in a binary tree
+ * @tree: _tree _root
+ * Return: _depths of a _nodes in a _binary _tree
  */
 size_t recursive_depth(const binary_tree_t *tree)
 {
